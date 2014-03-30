@@ -1,0 +1,41 @@
+Dijkstra's Algorithm Visualizer
+
+Dijkstra's algorithm solves the single-source shortest-path problem when all edges have non-negative weights. It is a greedy algorithm and similar to Prim's algorithm. Algorithm starts at the source vertex, s, it grows a tree, T, that ultimately spans all vertices reachable from S. Vertices are added to T in order of distance i.e., first S, then the vertex closest to S, then the next closest, and so on. Following implementation assumes that graph G is represented by adjacency lists.
+
+Algorithm:
+    DIJKSTRA (G, w, s)
+        INITIALIZE SINGLE-SOURCE (G, s)
+        S ← { }     // S will ultimately contains vertices of final shortest-path weights from s
+        Initialize priority queue Q i.e., Q  ←  V[G]
+        while priority queue Q  is not empty do
+            u  ←  EXTRACT_MIN(Q)    // Pull out new vertex
+            S  ←  S È {u}
+            // Perform relaxation for each vertex v adjacent to u
+            for each vertex v in Adj[u] do
+                Relax (u, v, w)
+				
+source: http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/dijkstraAlgor.htm
+
+About Visualizer:
+
+This software is build on Python (ver. 2.7) which makes use of "pygame" library for it's implementation.
+Currently this is incomplete and has limited functionality.
+
+One can download Python and Pygame the provided links:
+https://www.python.org/download/
+http://www.pygame.org/download.shtml
+
+Instruction about it's use:
+
+1) User starts off with an  empty set of Nodes and Edges.
+2) User can create Nodes by clicking on empty Screen, though there is a limit on the number of nodes that one can create.
+3) To add connections/Edges One must first Click on "set Edges" button on the left corner of the screen.
+4) After clicking on that button, one can add edges by consecutively clicking on the two Nodes which needs to be connected together.
+5) After choosing one Node if user wishes to drop it he/she can do so by clicking on empty screen.
+
+As mentioned above this is incomplete project and currently supports only this much functionality.
+
+
+
+
+
