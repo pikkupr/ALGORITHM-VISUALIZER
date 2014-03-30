@@ -28,7 +28,7 @@ http://www.pygame.org/download.shtml
 Instruction about it's use:
 
 1) User starts off with an  empty set of Nodes and Edges.
-2) User can create Nodes by clicking on empty Screen, though there is a limit on the number of nodes that one can create.
+2) User can create Nodes by clicking on empty Screen, though there is a limit on the number of nodes that one can create
 3) To add connections/Edges One must first Click on "set Edges" button on the left corner of the screen.
 4) After clicking on that button, one can add edges by consecutively clicking on the two Nodes which needs to be connected together.
 5) After choosing one Node if user wishes to drop it he/she can do so by clicking on empty screen.
